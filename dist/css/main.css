@@ -1,111 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+/* variables */
+/* mixins */
+/* clear floats */
+/* universal settings */
 * {
-  font-family: 'Open Sans', sans-serif;
-}
+  box-sizing: border-box; }
 
-body{
-    padding: 0;
-    margin: 0;
-}
+body {
+  font: 100% "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px; }
 
-header {
-    height: 50px;
-    background: #000;
-    color: #fff;
-    padding: 0 .5rem 0 1rem;
-}
+/* variables */
+/* Utility Classes */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
-header .logo{
-    line-height: 50px;
-    font-weight: bold;
-}
+/** Rows and Columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
 
-nav {
-    float: right;
-}
+.col {
+  float: left;
+  width: 25%;
+  padding: .5rem;
+  /* debug */
+  border: 1px solid #990000;
+  background: #fff; }
 
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+.text-success {
+  color: #3c763d; }
 
-nav ul li{
-    display: inline;
-}
+.text-error {
+  color: #a94442; }
 
-nav ul li a,
-nav ul li a:link,
-nav ul li a:visited{
-    display: inline-block;
-    padding: 0 .5rem;
-    color: #fff;
-    line-height: 50px;
-    text-decoration: none;
-}
+.text-warning {
+  color: #8a6d3b; }
 
-nav ul li a:hover{
-    background: rgb(68, 68, 68);
-}
+.message, .message-success, .message-error, .message-warning {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  color: #333; }
 
-main {
-    /* Use a margin to center the page */
-    margin: 0 auto;
+.message-success {
+  border-color: #3c763d;
+  color: #3c763d; }
 
-    /* Set the width of the content */
-    width: 960px;
+.message-error {
+  border-color: #a94442;
+  color: #a94442; }
 
-    /* For smaller screens to not exceed the max screen width */
-    max-width: 90%;
-}
+.message-warning {
+  border-color: #8a6d3b;
+  color: #8a6d3b; }
 
-.avatar {
-    border-radius: 50%; 
-    float: left; 
-    margin-right: 1em;
-}
-
-#toggleMenu {
-    display: none;
-}
-
-@media only screen and (max-width: 960px)  {
-
-    #toggleMenu {
-        display: block;
-        float: right;
-        line-height: 50px;
-    }
-
-    nav {
-      display:none;
-  }
-  
-    header {
-        position: relative;
-    }
-
-    nav {
-        position: absolute;
-        display: none;
-        background: #000;
-        top: 50px;
-        left: 0;
-        right: 0;
-      }
-
-    nav ul li a,
-    nav ul li a:link,
-    nav ul li a:visited{
-        display: block;
-        border-bottom: 1px solid #777;
-    }
-
-#toggleMenu {
-    display: none;
-}
-}
-.name {
-  text-align: center
-}
+/*# sourceMappingURL=main.css.map */
