@@ -79,14 +79,13 @@ main {
     }
 
     header {
-        position: center;
-        left: 80%
+        position: relative;
     }
 
     nav {
         position: absolute;
         display: none;
-        background: rgb(204, 19, 19);
+        background: #000;
         top: 50px;
         left: 0;
         right: 0;
@@ -100,4 +99,6 @@ main {
     }
 
 }
-
+.name {
+    text-align: center
+  }
