@@ -1,51 +1,69 @@
-<!DOCTYPE html>
-<html>
-    <head>
-       <title>Alfredo Esquivel</title>
-       <link href="./dist/css/main.css" type="text/css" rel="stylesheet">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body>
-        
-        <header>
-            <span class="logo">My WebSite</span>
-            <a id="toggleMenu">Menu<a></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <h1>Hello, I'm Alfredo Esquivel</h1>
-            <p>
-                <img 
-                    class="avatar"
-                    src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" 
-                    alt="Alfredo Esquivel">
-        
-                I always had a passion for technology and computers,  
-    So i decided to turn my passion into a life long career.
-            </p>
-        </main>
+<DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <title>Home</title>
 
-        <script>
-            var toggleMenu = document.getElementById('toggleMenu');
-            var nav = document.querySelector('nav');
-            toggleMenu.addEventListener(
-                'click',
-                function(){
-                if(nav.style.display=='block'){
-                    nav.style.display='none';
-                }else{
-                    nav.style.display='block';
-                }
-                }
-            );
-        </script>
-        
-    </body>
+            
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+            
+
+   <style>
+      
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .body {
+         background-image: url('download.jpeg');
+      }
+      
+    </style>
+    <!-- Custom styles for this template -->
+    
+  </head>
+  <body>
+    <div>
+  <header class="masthead mb-auto"></header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">My Portfolio Website</a>
+                              
+                            
+                <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                  <li>
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li>
+                <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="contact.html">Contacts</a>
+                      </li>
+                      <li>
+                        <a class="nav-link" href="thanks.html">Thanks</a>
+                          </li>
+                               
+                </div>
+            </nav>
+  </header>
+
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Hello, I'm Alfredo Esquivel.</h1>
+    <p class="lead">I alwyas had a passion for the technology field, So I decided to turn my passion into a career!</p>
+    <p class="lead">Learning & perfecting the art is my goal, Also maintaining & developing my knowledge.</p>
+    <p>in differnt Software/Technology</p>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
 </html>
