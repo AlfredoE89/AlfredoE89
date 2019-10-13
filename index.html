@@ -1,49 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Alfredo Esquivel</title>
-       <link rel="stylesheet" type="text/css" href="./src/scss/main.scss">
-       <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
-       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body class="body1">
-        <header>
-            <span class="logo">My Portfolio website</span>
-            <a id="toggleMenu">Menu<a></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+     <title>My Portfolio/Projects</title>
+        <link rel="stylesheet" type="text/css" href="./src/scss/main.scss">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+     </head>
+    <header>
+        <div class="container">Alfredo Esquivel</div>
+      </header>
 
-        <main>
-            <h1>Alfredo Esquivel</h1>
-            <br>
-            <br>
-            <form action="resume.html">
-              <input class="button" type="submit" value="RESUME" />
-          </form>
-            
-            
-        </main>
-
-        <script>
-            var toggleMenu = document.getElementById('toggleMenu');
-            var nav = document.querySelector('nav');
-            toggleMenu.addEventListener(
-                'click',
-                function(){
-                if(nav.style.display=='block'){
-                    nav.style.display='none';
-                }else{
-                    nav.style.display='block';
-                }
-                }
-            );
-        </script>
-        
-    </body>
-    </html>
+<body>
+        <a href=resume.html class="button button1">Projects</button></a>
+        <a href=resume.html class="button button1">Resume</button></a>
+        <a href=resume.html class="button button1">Contact</button></a>
+        <a href=resume.html class="button button1">Thanks</button></a>
+              
+              <div class="flexcontainercolumn">
+                <div class="item1">Project-1</div>
+                <div class="item2">Project-2</div>
+                <div class="item3">Project-3</div>
+                <div class="item4">Project-4</div>
+                <div class="item5">Project-5</div>
+                <div class="item6">Project-6</div>
+              </div>
