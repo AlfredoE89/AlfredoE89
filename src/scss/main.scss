@@ -1,90 +1,164 @@
-/* variables */
-/* mixins */
-/* clear floats */
-@mixin clearfix() {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-$primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$primary-color: #333;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-/* universal settings */
-
-* {
-  box-sizing: border-box;
+nav, h1 {
+  font-family: 'Open Sans', sans-serif;
 }
 
-body {
-  font: 100% $primary-font-stack;
-  color: $primary-color;
-
-  margin: 0 auto;
-  padding: 0;
-  width: 1170px;
+.logo {
+  font-family: 'Pacifico', cursive;
 }
 
-/* variables */
-$success-color: #3c763d;
-$warning-color: #8a6d3b;
-$error-color: #a94442;
-
-/* Utility Classes */
-
-.clearfix {
-  @include clearfix();
+.body{
+    padding: 0;
+    margin: 0;
 }
 
-/** Rows and Columns */
-.row {
-  @include clearfix();
+header {
+    height: 50px;
+    background: hsl(0, 5%, 27%);
+    color: hsl(0, 100%, 41%);
+    padding-left: 10px;
+    
+
 }
 
-.col {
-  float: left;
-  width: 25%;
-  padding: .5rem;
-
-  /* debug */
-  border: 1px solid #990000;
-  background: #fff;
+header .logo{
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 28px;
 }
 
-.text-success {
-  color: $success-color;
+h1 {
+  padding-top: 10%;
+  text-align: center;
+  font-size: 50px;
+  color: #ececec
 }
 
-.text-error {
-  color: $error-color;
-}
-
-.text-warning {
-  color: $warning-color;
-}
-
-.message {
-  border: 1px solid #ccc;
+.button {
+  display: inline-block;
   border-radius: 4px;
-  padding: 10px;
-  color: #333;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-left: 39%;
 }
 
-.message-success {
-    @extend .message;
-    border-color: $success-color;
-    color: $success-color;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.message-error {
-  @extend .message;
-  border-color: $error-color;
-  color: $error-color;
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
 
-.message-warning {
-  @extend .message;
-  border-color: $warning-color;
-  color: $warning-color;
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited{
+    display: inline-block;
+    padding: 0 .5rem;
+    color: rgb(204, 0, 0);
+    line-height: 50px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: #444;
+}
+
+main {
+    /* Use a margin to center the page */
+    margin: 0 auto;
+
+    /* Set the width of the content */
+    width: 960px;
+
+    /* For smaller screens to not exceed the max screen width */
+    max-width: 90%;
+}
+
+
+
+#toggleMenu {
+    display: none;
+}
+
+.body1 {
+  background-image: url('https://iammagnus.com/wp-content/uploads/2016/05/website-design-background-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.body2 {
+  background-image: url('http://www.carillonmedia.com/spademo/assets/img/innerpages/profile/portfolio/1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media only screen and (max-width: 960px)  {
+
+    #toggleMenu {
+        display: block;
+        float: right;
+        line-height: 50px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+        display: none;
+        background: #000;
+        top: 50px;
+        left: 0;
+        right: 0;
+      }
+
+    nav ul li a,
+    nav ul li a:link,
+    nav ul li a:visited{
+        display: block;
+        border-bottom: 1px solid #777;
+    }
 }
