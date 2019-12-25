@@ -5,11 +5,11 @@
 }
 
 .mainContent {
-  background-color: red;
   flex: 1 0 auto;
 }
 
 .mainHeader {
+  background-color: silver;
   box-shadow: 3px 3px 10px #888888;
 }
 
@@ -31,13 +31,4 @@
   border: #777;
   width: 300px;
   border-radius: 3px;
-}
-
-ul {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
