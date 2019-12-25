@@ -18,7 +18,6 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  justify-content: center;
   padding: 15px 10px;
 }
 
@@ -34,9 +33,11 @@
   border-radius: 3px;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: none;
-  padding: 10px;
+ul {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
