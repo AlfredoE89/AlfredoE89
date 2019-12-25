@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mainContent {
+  background-color: red;
+  flex: 1 0 auto;
+}
+
+.mainHeader {
+  box-shadow: 3px 3px 10px #888888;
+}
+
+.mainHeader .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: center;
+  padding: 15px 10px;
+}
+
+.mainHeader {
+  width: 170px;
+  margin-bottom: 1rem;
+}
+
+.mainHeader {
+  padding: 7px;
+  border: #777;
+  width: 300px;
+  border-radius: 3px;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: none;
+  padding: 10px;
+}
