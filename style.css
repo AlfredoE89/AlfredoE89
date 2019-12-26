@@ -9,26 +9,12 @@
 }
 
 .mainHeader {
-  background-color: silver;
+  background: royalblue;
   box-shadow: 3px 3px 10px #888888;
 }
 
-.mainHeader .container {
+.mainHeader .topHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  padding: 15px 10px;
-}
-
-.mainHeader {
-  width: 170px;
-  margin-bottom: 1rem;
-}
-
-.mainHeader {
-  padding: 7px;
-  border: #777;
-  width: 300px;
-  border-radius: 3px;
 }
