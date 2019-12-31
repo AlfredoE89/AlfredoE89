@@ -79,16 +79,16 @@ body {
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 3rem;
 }
 
 ul {
@@ -152,14 +152,14 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 37vh;
+  height: 60vh;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
 .welcome-section > p {
   margin-left: 15px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
@@ -332,21 +332,30 @@ footer i {
 }
 
 .section1 {
+  align-items: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
 .section2 {
+  align-items: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
 .section3 {
+  align-items: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
 .section4 {
+  align-items: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+p,
+li {
+  text-align: center;
 }
