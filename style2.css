@@ -166,6 +166,7 @@ img {
 
 #welcome-section-header {
   margin-top: 50px;
+  color: var(--main-red);
 }
 /* Projects section */
 
@@ -178,7 +179,7 @@ img {
 .projects-section-header {
   max-width: 400px;
   margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
+  border-bottom: 0.2rem solid var(--main-red);
 }
 
 @media (max-width: 28.75em) {
@@ -199,9 +200,5 @@ img {
 @media (max-width: 30.625em) {
   .projects-section {
     padding: 5rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
   }
 }
